@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../view/css/dashbord.css">
-    <title>Dashbord</title>
+    <link rel="stylesheet" href="../view/css/dashbord.css">
+    <title>Home</title>
 </head>
 <body>
-    <!--Heading part start-->
-    <div class="header">
-        <div class="logo">
-            <img src="../view/image/logo.jpg" alt="logo">
-        </div>
-        <div class="menu-bar">
-            <ul>
-                <a href="../view/dashbord.php"><li>Home</li></a>
-                <a href=""><li>Update Profile</li></a>
-                <a href=""><li>Change Password</li></a>
-                <a href="../controller/logout.php"><li>Logout</li></a>
-            </ul>
-        </div>
-    </div>
-    <!--Heading part end-->
+<?php
+session_start();
+if (!isset($_SESSION['uname']))
+{
+    header('Location: ../view/login.html');
+}
+include '../view/header.php';
+?>
+<img src="../view/image/welcome.jpg" alt="banner" width="100%">
 
 </body>
 </html>

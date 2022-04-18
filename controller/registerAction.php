@@ -124,7 +124,7 @@ if (!$flag) {
             move_uploaded_file($tempFile, $destination . "" . $fileName);
         }
         else{
-            echo "<h2 style='color: red;'>Registration Failed</h2>";
+            echo "<h2 style='color: green;'>Registration Failed</h2>";
         }
     }
     else{

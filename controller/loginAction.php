@@ -41,7 +41,7 @@ if (!$flag){
         $_SESSION['pass'] = $pass;
         $_SESSION['image'] = $res['image'];
         echo "<h2 style='color: green;'>Login done successfully</h2>";
-       // slep(5);e
+        
         header("location:../view/dashbord.php");
     }
     else{
