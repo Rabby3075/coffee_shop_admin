@@ -27,7 +27,7 @@
     <ul>
         <li><a href="../view/dashbord.php">Home</a></li>
         <li><a href="../view/table.php">Table</a></li>
-        <li><a href="">Searching</a></li>
+        <li><a href="../view/searching.php">Searching</a></li>
         <li><a href="">View</a></li>
         <li><a href="">Procedural Function</a></li>
         <li><a href="">Trigger</a></li>
