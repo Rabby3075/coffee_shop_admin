@@ -32,7 +32,7 @@ include '../model/tabledb.php';
     <th>Zipcode</th>
     </tr>
     <?php
-    $res = coffee_shopShow();
+    $res = coffee_shopShow(); //res = sql
     while ($row = oci_fetch_array($res, OCI_RETURN_NULLS+OCI_ASSOC)) {
         
         echo '<tr>';

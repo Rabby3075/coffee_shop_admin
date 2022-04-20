@@ -19,7 +19,7 @@
         <h1>Coffee Shop</h1>
     </div>
 <div class="welcome-text">
-    <h1>Welcome <?php echo $_SESSION['uname']; ?> </h1>
+    <h1>Welcome <?php echo $_SESSION['name']; ?> </h1>
 </div>
 </div>
 
@@ -29,8 +29,8 @@
         <li><a href="../view/table.php">Table</a></li>
         <li><a href="../view/searching.php">Searching</a></li>
         <li><a href="">View</a></li>
-        <li><a href="">Procedural Function</a></li>
-        <li><a href="">Trigger</a></li>
+        <li><a href="../view/plsql.php">Procedural Function</a></li>
+        <li><a href="../view/trigger.php">Trigger</a></li>
         <li><a href="../controller/logout.php">Logout</a></li>
     </ul>
 </div>

@@ -29,7 +29,22 @@ td{
  table tr:hover{
     background-color: #02FE73;
 }
-
-.form {
-    border: 2px solid red;
+.info{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.submit{
+    width: 200px;
+    height: 30px;
+    background-color: green;
+    color: white;
+}
+.submit:hover{
+    background-color: blue;
+    border: 2px solid green;
+}
+span{
+    color: red;
 }

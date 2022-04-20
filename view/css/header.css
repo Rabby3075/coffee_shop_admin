@@ -50,7 +50,7 @@
     
 }
 
-.menubar ul li:hover,.menubar ul li:active{
+.menubar ul li:hover{
     background-color: #000000;
 }
 

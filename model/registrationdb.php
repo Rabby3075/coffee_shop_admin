@@ -10,11 +10,11 @@ include'../model/dbConnect.php';
 
 function get($userName){
     $conn = connect();
-    $query = oci_parse($conn,"SELECT * FROM UINFORMATION WHERE UNAME = '$userName'");
+    $query = oci_parse($conn,"SELECT * FROM UINFORMATION WHERE uname = ?");
     $res = oci_execute($query);
     $row = oci_fetch_all($query,$res);
     return $row;
 }
 
 
-?>
+?> 

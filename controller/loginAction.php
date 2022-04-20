@@ -28,18 +28,18 @@ if (!$flag){
     if($res){
         
         session_start();
-        $_SESSION['name'] = $res['name'];
-        $_SESSION['fname'] = $res['fname'];
-        $_SESSION['mname'] = $res['mname'];
-        $_SESSION['gender'] = $res['gender'];
-        $_SESSION['religion'] = $res['religion'];
-        $_SESSION['dob'] = $res['dob'];
-        $_SESSION['phone'] = $res['phone'];
-        $_SESSION['nid'] = $res['nid'];
+        $_SESSION['name'] = $res['NAME'];
+        $_SESSION['fname'] = $res['FNAME'];
+        $_SESSION['mname'] = $res['MNAME'];
+        $_SESSION['gender'] = $res['GENDER'];
+        $_SESSION['religion'] = $res['RELIGION'];
+        $_SESSION['dob'] = $res['DOB'];
+        $_SESSION['phone'] = $res['PHONE'];
+        $_SESSION['nid'] = $res['NID'];
         $_SESSION['uname'] = $uname;
-        $_SESSION['email'] = $res['email'];
+        $_SESSION['email'] = $res['EMAIL'];
         $_SESSION['pass'] = $pass;
-        $_SESSION['image'] = $res['image'];
+        $_SESSION['image'] = $res['IMAGE'];
         echo "<h2 style='color: green;'>Login done successfully</h2>";
         
         header("location:../view/dashbord.php");
