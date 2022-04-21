@@ -103,5 +103,36 @@ if (isset($_POST['submit3'])) {
         # code...
     }
 }
+if(isset($_POST['submit4'])){
+    $mid = "";
+    $flag = false;
+    if (empty($_POST['mid'])) {
+        echo "ID Required";
+        echo "<br>";
+        $flag = true;
+    }
+    if (!$flag) {
+        $mid = input_data($_POST['mid']);
+    
+        plsqldb4($mid);
+        # code...
+    }
+}   
+
+if(isset($_POST['submit5'])){
+    $wid = "";
+    $flag = false;
+    if (empty($_POST['wid'])) {
+        echo "ID Required";
+        echo "<br>";
+        $flag = true;
+    }
+    if (!$flag) {
+        $wid = input_data($_POST['wid']);
+    
+        plsqldb5($wid);
+        # code...
+    }
+} 
 
 ?>

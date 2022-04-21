@@ -98,5 +98,48 @@ include '../view/header.php';
 <hr>
 </div>
 
+<!-- 4th ques -->
+<div class="heading-table">
+    <p>Show manager salary by giving input id</p>
+</div>
+<div class="info">
+   
+<form action="../controller/plsqlAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax2(this); return false;">
+<label for="mid">Manager ID: </label>
+    <input type="text" id="mid" name="mid">
+    <span id="midErr"></span>
+
+    <br><br>
+    <input class="submit" type="submit" id="submit4" name="submit4" value="Submit">
+</form>
+<hr>
+
+<h2 id="msg4"></h2>
+
+<hr>
+</div>
+
+<!-- 5th ques -->
+<div class="heading-table">
+    <p>Show waiter salary by giving input id</p>
+</div>
+<div class="info">
+   
+<form action="../controller/plsqlAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax2(this); return false;">
+<label for="mid">Waiter ID: </label>
+    <input type="text" id="wid" name="wid">
+    <span id="widErr"></span>
+
+    <br><br>
+    <input class="submit" type="submit" id="submit5" name="submit5" value="Submit">
+</form>
+<hr>
+
+<h2 id="msg5"></h2>
+
+<hr>
+</div>
+
+
 </body>
 </html>

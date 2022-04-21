@@ -33,4 +33,28 @@ function plsqldb3($coid,$coname,$conumber,$coaddress,$zipcode){
     return oci_execute($stmt);
     
 }
+
+function plsqldb4($mid){
+
+    $conn = connect();
+    $sql = 'BEGIN :msal:=manSal(:mid);END;';
+    $stmt = oci_parse($conn,$sql);
+    oci_bind_by_name($stmt,':mid',$mid,32);
+    oci_bind_by_name($stmt,':msal',$msal,32);
+    oci_execute($stmt);
+    echo "Sal : $msal";
+    
+}
+
+function plsqldb5($wid){
+
+    $conn = connect();
+    $sql = 'BEGIN :wsal:=waiterSal(:wid);END;';
+    $stmt = oci_parse($conn,$sql);
+    oci_bind_by_name($stmt,':wid',$wid,32);
+    oci_bind_by_name($stmt,':wsal',$wsal,32);
+    oci_execute($stmt);
+    echo "Sal : $wsal";
+    
+}
 ?>
