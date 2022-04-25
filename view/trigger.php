@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../view/css/trigger.css">
+    <script src="../view/js/trigger.js"></script>
     <title>Trigger</title>
 </head>
 <body>
@@ -25,19 +26,19 @@ include '../model/triggerdb.php';
 </div>
 <div class="info">
    
-<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax1(this); return false;">
+<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form1" onsubmit="ajax1(this); return false;">
     <label for="fid">Food ID: </label>
     <input type="text" id="fid" name="fid">
-    <span id="midErr"></span>
+    <span id="fidErr"></span>
     <label for="quantity">Add Negative Quantity: </label>
     <input type="number" id="quantity" name="quantity">
-    <span id="salErr"></span>
+    <span id="quantityErr"></span>
     <br><br>
     <input class="submit" type="submit" id="submit1" name="submit1" value="Submit">
 </form>
 <hr>
 
-<h2 id="msg1"></h2>
+<p id="msg1"></p>
 
 <hr>
 </div>
@@ -48,19 +49,19 @@ include '../model/triggerdb.php';
 </div>
 <div class="info">
    
-<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax1(this); return false;">
+<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form2" onsubmit="ajax2(this); return false;">
     <label for="csid">Shop ID: </label>
     <input type="text" id="csid" name="csid">
     <span id="csidErr"></span>
     <label for="address">Input Mirpur for checking trigger: </label>
     <input type="text" id="address" name="address">
-    <span id="salErr"></span>
+    <span id="addressErr"></span>
     <br><br>
     <input class="submit" type="submit" id="submit2" name="submit2" value="Submit">
 </form>
 <hr>
 
-<h2 id="msg2"></h2>
+<p id="msg2"></p>
 
 <hr>
 </div>
@@ -70,19 +71,19 @@ include '../model/triggerdb.php';
 </div>
 <div class="info">
    
-<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax1(this); return false;">
+<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form3" onsubmit="ajax3(this); return false;">
     <label for="csid">Customer ID: </label>
     <input type="text" id="csid" name="csid">
     <span id="csidErr"></span>
     <label for="cname">Customer name </label>
     <input type="text" id="cname" name="cname">
-    <span id="salErr"></span>
+    <span id="cnameErr"></span>
     <br><br>
     <input class="submit" type="submit" id="submit3" name="submit3" value="Submit">
 </form>
 <hr>
 
-<h2 id="msg3"></h2>
+<p id="msg3"></p>
 
 <hr>
 </div>
@@ -93,15 +94,15 @@ include '../model/triggerdb.php';
 </div>
 <div class="info">
    
-<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form" onsubmit="ajax1(this); return false;">
+<form action="../controller/triggerAction.php" method="POST" enctype="multipart/form-data" name="form4" onsubmit="ajax4(this); return false;">
 <label for="fid">Food ID: </label>
     <input type="text" id="fid" name="fid">
-    <span id="midErr"></span>
+    <span id="fidErr"></span>
     <label for="quantity">Add  Quantity: </label>
     <input type="number" id="quantity" name="quantity">
-    <span id="salErr"></span>
+    <span id="quantityErr"></span>
     <br><br>
-    <input class="submit" type="submit" id="submit1" name="submit1" value="Submit">
+    <input class="submit" type="submit" id="submit4" name="submit4" value="Submit">
 </form>
 <table border="2">
     <tr>
